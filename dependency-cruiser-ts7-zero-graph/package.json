@@ -1,0 +1,14 @@
+{
+  "name": "dependency-cruiser-ts7-zero-graph-repro",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cruise": "depcruise src",
+    "reproduce": "node reproduce.mjs"
+  },
+  "devDependencies": {
+    "dependency-cruiser": "18.2.0",
+    "typescript": "7.0.2"
+  }
+}

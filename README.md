@@ -1,19 +1,18 @@
 # Upstream TypeScript Reproductions
 
-Minimal public reproductions for declaration-file failures found while combining
-Better Auth, Better Fetch, Cloudflare Workers tooling, Vitest, Tinybench and
-strict TypeScript declaration checking.
+Minimal public reproductions for TypeScript declaration and tooling failures.
 
-Each folder is independent, pins exact versions and intentionally makes
-`npm run reproduce` fail with the documented upstream diagnostic. No product
-code, credentials or private repository history is included.
+Each folder is independent, pins exact versions and exposes its documented
+failure through `npm run reproduce`. Fixtures contain only the source and
+configuration required for that result.
 
-| Folder | Expected diagnostic owner |
+| Folder | Expected upstream owner |
 | --- | --- |
 | `better-auth-core` | `@better-auth/core` unconditional runtime type imports |
 | `better-fetch` | `@better-fetch/fetch` DOM aliases, `Timer` and generic constraint |
 | `cloudflare-vitest` | Vitest plugin declarations versus Wrangler-generated runtime types |
 | `cloudflare-tooling-declarations` | Vite plugin and Wrangler declaration dependencies |
+| `dependency-cruiser-ts7-zero-graph` | dependency-cruiser false pass on an unusable TypeScript 7 graph |
 | `miniflare-package` | Published Miniflare declaration dependencies and missing `./shared` |
 | `tinybench-workerd` | Tinybench event overloads versus Workerd `EventTarget` |
 
@@ -24,5 +23,4 @@ npm ci
 npm run reproduce
 ```
 
-The non-zero TypeScript exit is the reproduction, not a test-suite failure in
-this repository.
+See each folder's README for its expected exit and control result.
