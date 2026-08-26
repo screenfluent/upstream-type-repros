@@ -1,0 +1,17 @@
+{
+  "name": "better-auth-core-type-repro",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typegen": "wrangler types",
+    "reproduce": "npm run typegen && tsc --pretty false"
+  },
+  "dependencies": {
+    "better-auth": "1.7.1"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "wrangler": "4.126.0"
+  }
+}

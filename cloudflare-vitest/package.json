@@ -1,0 +1,16 @@
+{
+  "name": "cloudflare-vitest-type-repro",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typegen": "wrangler types",
+    "reproduce": "npm run typegen && tsc -p test/tsconfig.json --pretty false"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "1.1.0",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11",
+    "wrangler": "4.126.0"
+  }
+}

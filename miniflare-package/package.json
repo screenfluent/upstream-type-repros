@@ -1,0 +1,18 @@
+{
+  "name": "miniflare-package-type-repro",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "inspect-package": "node check-package.mjs",
+    "reproduce": "tsc --pretty false"
+  },
+  "dependencies": {
+    "miniflare": "5.20260825.0-alpha"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "@types/ws": "8.18.1",
+    "typescript": "7.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tinybench-workerd-type-repro",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-08-25"
+}
