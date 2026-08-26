@@ -13,6 +13,7 @@ code, credentials or private repository history is included.
 | `better-auth-core` | `@better-auth/core` unconditional runtime type imports |
 | `better-fetch` | `@better-fetch/fetch` DOM aliases, `Timer` and generic constraint |
 | `cloudflare-vitest` | Vitest plugin declarations versus Wrangler-generated runtime types |
+| `cloudflare-tooling-declarations` | Vite plugin and Wrangler declaration dependencies |
 | `miniflare-package` | Published Miniflare declaration dependencies and missing `./shared` |
 | `tinybench-workerd` | Tinybench event overloads versus Workerd `EventTarget` |
 
